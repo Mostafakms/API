@@ -71,7 +71,6 @@ class AuthController extends Controller
         $response = Http::get($apiurl);
         $users = json_decode($response, true);
         return response()->json($users);
-
     }
 
 
